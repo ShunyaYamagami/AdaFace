@@ -11,5 +11,4 @@ result
 scripts/run_debug*
 
 pretrained/
-*.ipynb
 _*/
