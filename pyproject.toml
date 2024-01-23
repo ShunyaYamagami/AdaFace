@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "adaface"
+version = "0.1.0"
+description = ""
+authors = ["naxa"]
+license = "proprietary"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+torch = { url = "https://download.pytorch.org/whl/cu121/torch-2.1.1%2Bcu121-cp311-cp311-linux_x86_64.whl" }
+opencv-python = "4.6.0.66"
+pytorch-lightning = "^2.1.3"
+onnx = "^1.15.0"
+onnxruntime = "^1.16.3"
+tqdm = "^4.66.1"
+pillow = "^10.2.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.1.9"
+notebook = "^7.0.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
