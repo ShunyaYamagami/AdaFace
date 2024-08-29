@@ -1,6 +1,7 @@
-import net
 import numpy as np
 import torch
+
+from . import net
 
 
 def load_pretrained_model(architecture="ir_50", pretrained_path="pretrained/adaface_ir50_ms1mv2.ckpt"):
