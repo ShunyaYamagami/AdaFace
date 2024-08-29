@@ -25,6 +25,8 @@ class AdaFace:
         """顔画像から特徴量を抽出する
         Args:
             cropped_face_images (list[Image.Image]): 顔部分を切り抜いた画像のリスト
+        Returns:
+            np.ndarray: 顔画像から抽出した特徴量 (n_faces, 512)
         """
         cropped_face_images: list[Image.Image] = [im.resize(SIZE) for im in cropped_face_images]
         cropped_faces: list[np.ndarray] = [to_input(face_pil_img) for face_pil_img in cropped_face_images]
